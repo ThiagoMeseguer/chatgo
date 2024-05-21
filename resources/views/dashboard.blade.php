@@ -1,6 +1,4 @@
 <x-app-layout>
-    @livewireStyles
-
     <div class="py-6">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
@@ -19,8 +17,7 @@
                                     <p class="text-sm font-normal py-2.5 text-gray-900 dark:text-white">
                                         That's awesome. I think our users will really appreciate the improvements.
                                     </p>
-                                    <span class="text-xs font-cursive text-gray-500 dark:text-gray-400">11:46
-                                        Enviado</span>
+                                    <span class="text-xs font-cursive text-gray-500 dark:text-gray-400">11:46 Enviado</span>
                                 </div>
 
                                 {{-- <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots"
@@ -60,12 +57,7 @@
                                     </ul>
                                 </div> --}}
                             </div>
-
-
-
                             <!-- Caja de texto para ingresar mensajes -->
-
-
                         </div>
                         <form>
                             <label for="chat" class="sr-only">Your message</label>
@@ -113,6 +105,4 @@
                 </div>
             </div>
         </div>
-
-        @livewireScripts
 </x-app-layout>
