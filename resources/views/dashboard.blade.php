@@ -6,6 +6,7 @@
                     <div class="rounded grid gap-2 overflow-y-auto max-h-[490px]">
                         <!-- Contenido de la lista de contactos -->
                         <div class="bg-white h-[55px]">Contacto 1</div>
+
                         <!-- Más elementos de contacto -->
                     </div>
                     <div id="chat-box" class="col-span-2 bg-gray-400 rounded">
@@ -19,6 +20,7 @@
                                     </p>
                                     <span class="text-xs font-cursive text-gray-500 dark:text-gray-400">11:46 Enviado</span>
                                 </div>
+
 
                                 {{-- <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots"
                                     data-dropdown-placement="bottom-start"

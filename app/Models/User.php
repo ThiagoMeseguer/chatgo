@@ -38,10 +38,25 @@ class User extends Authenticatable
      *
      * @var array<string, string>
      */
-        protected $casts = [
+    protected $casts = [
         'phone' => 'string',
     ];
     // protected $casts = [
     //     'email_verified_at' => 'datetime',
     // ];
+
+    public function groups()
+    {
+        return $this->belongsToMany(Group::class, 'users_groups');
+    }
+
+    public function messagesTransmitted()
+    {
+        return $this->hasMany(Message::class, 'transmitter_id');
+    }
+
+    public function receivedMessages()
+    {
+        return $this->belongsToMany(Message::class, 'message_receiver', 'user_id', 'message_id');
+    }
 }

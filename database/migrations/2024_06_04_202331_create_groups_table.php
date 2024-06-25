@@ -8,28 +8,21 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     *
-     * @return void
      */
-    public function up()
+    public function up(): void
     {
-        Schema::create('messages', function (Blueprint $table) {
+        Schema::create('groups', function (Blueprint $table) {
             $table->id();
-            $table->string('transmitter_id');
-            $table->string('receiver_group_id');
-            $table->string('body');
+            $table->string('name');
             $table->timestamps();
         });
-        
     }
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down()
+    public function down(): void
     {
-        Schema::dropIfExists('messages');
+        Schema::dropIfExists('groups');
     }
 };
